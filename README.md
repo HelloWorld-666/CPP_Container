@@ -1,2 +1,2 @@
 # C-_Container
-C++  STL容器
+C++  常用STL容器：vector、map、list、set...
