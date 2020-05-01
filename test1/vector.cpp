@@ -5,22 +5,22 @@ using namespace std;
 
 int main() 
 {
-    vector<int>  vec1(2, 3);
-    vec1.push_back(55);                                                   //入
+    vector<int>  vec1(6, 3);												// 6个3
+    vec1.push_back(55);														//入
     vec1.push_back(77);                         
 /*    vec1.pop_back();                                                      
-    vec1.pop_back();                                                      //出
+    vec1.pop_back();														//出
     vec1.pop_back();
-    vec1.pop_back();*/                                                    //删除末尾元素，不能删除指定元素(顺序容器)
+    vec1.pop_back();*/														//删除末尾元素，不能删除指定元素(顺序容器)
     vector<string> vec2(10, "hahaha");
-    vector<int>    vec3(vec1.begin(), vec1.end());                        //获取迭代器首地址、末尾地址
+    vector<int>    vec3(vec1.begin(), vec1.end());							//获取迭代器首地址、末尾地址
     
     vector<int>::iterator iter1;
     iter1 = vec1.end();
     //cout << vec1.empty() << endl;                                         //判断容器是否为空
-    //vec1.insert(vec1.end(), 5, 1);                                        //从vec1.back位置插入5个值为1的元素
+    //vec1.insert(vec1.end(), 5, 1);                                        //从vec1.end位置插入5个值为1的元素
     //vec1.clear();                                                         //清空元素
-    //cout << *(vec1.end() - 1) /*<< "\t" << *(vec1.end())*/ << endl;     //注意v1.end()指向的是最后一个元素的下一个位置，所以访问最后一个元素的正确操作为：*(v1.end()-1);
+    //cout << *(vec1.end() - 1) /*<< "\t" << *(vec1.end())*/ << endl;       //注意v1.end()指向的是最后一个元素的下一个位置，所以访问最后一个元素的正确操作为：*(v1.end()-1);
     //cout << vec1.size() << endl;
     //遍历
    /* for (int i = 0; i < vec1.size(); i++)
